@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CDN Demo</title>
+</head>
+
+<div style="position:fixed; bottom:50%; left:45%">
+    <button id="beepBtn" style="font-size:3em">Submit</button>
+</div>
+
+<body>
+    <!-- Calling in framework repo to access beep() -->
+    <script src="https://cdn.jsdelivr.net/gh/TxDOT/Framework/framework_1.0.js"></script>
+    <script>
+        document.getElementById("beepBtn").onclick = function() {
+            beep()
+        };
+    </script>
+</body>
+
+</html>
